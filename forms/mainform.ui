@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Disk Cleaner</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="DiskCleaner">
+   <widget class="QTabWidget" name="MainTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="CleanTab">
+     <attribute name="title">
+      <string>Отчистка Диска</string>
+     </attribute>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>779</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>176</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="ScanLayout">
+       <item>
+        <widget class="QComboBox" name="ScanList">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string comment="ц" extracomment="ц"/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ScanButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Сканировать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="SafetyTab">
+     <attribute name="title">
+      <string>Безопасное Удаление Файлов</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Настройки</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
